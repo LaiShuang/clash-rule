@@ -129,6 +129,7 @@ pr: &pr {type: select, proxies: [🚀 节点选择, 🔯 香港故转, 🔯 日�
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [🔯 香港故转, 🔯 日本故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🌐 全部节点, 🟢 直连]}
   - {name: 📺 SYNEmby, type: select, proxies: [🚀 节点选择, ❤️ Emby专用, 🟢 直连]}
+  - {name: 📺 micuEmby, type: select, proxies: [🚀 节点选择, ❤️ Emby专用, 🟢 直连]}
   - {name: 📹 YouTube,!!merge <<: *pr}
   - {name: 🍀 Google,!!merge <<: *pr}
   - {name: 🤖 ChatGPT,!!merge <<: *pr}
@@ -157,6 +158,7 @@ proxy-groups:
 rules:
   - RULE-SET,private_domain,🟢 直连
   - RULE-SET,SYNEmby,📺 SYNEmby
+  - RULE-SET,micuEmby,📺 micuEmby
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,proxylite,🚀 节点选择
   - RULE-SET,ai,🤖 ChatGPT
@@ -187,6 +189,7 @@ rule-providers:
   proxylite: {!!merge <<: *class, url: "https://raw.staticdn.net/qichiyuhub/rule/refs/heads/master/ProxyLite.list"}
   ai: {!!merge <<: *class, url: "https://raw.staticdn.net/qichiyuhub/rule/refs/heads/master/AI.list"}
   SYNEmby: {!!merge <<: *class, url: "https://raw.staticdn.net/LaiShuang/clash-rule/refs/heads/main/SYNEmby.list"}
+  micuEmby: {!!merge <<: *class, url: "https://raw.staticdn.net/LaiShuang/clash-rule/refs/heads/main/micuEmby.list"}
   youtube_domain: {!!merge <<: *domain, url: "https://raw.staticdn.net/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: {!!merge <<: *domain, url: "https://raw.staticdn.net/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
   github_domain: {!!merge <<: *domain, url: "https://raw.staticdn.net/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
