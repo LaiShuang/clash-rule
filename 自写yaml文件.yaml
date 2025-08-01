@@ -4,7 +4,7 @@
 # 机场订阅
 proxy-providers:
   AmyTelecom:
-    url: "https://sub.kwk7thgc.com/?L1N1YnNjcmlwdGlvbi9DbGFzaD9zaWQ9NzY0MjQmdG9rZW49dng5SnYyVHRMZ2UmbW09ODY1MTAma3RtbT14cWp6eU9mUTI1N3pTSXNjQUZDYyUyYnclM2QlM2QmYjlkY2NkYzg1NDJm"
+    url: "代理订阅地址"
     type: http
     health-check:
       enable: true
