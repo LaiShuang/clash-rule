@@ -168,7 +168,7 @@ rule-anchor:
 rule-providers: 
   private_domain: { <<: *domain, url: "https://hub.gitmirror.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   proxylite: { <<: *class, url: "https://hub.gitmirror.com/https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/proxy.list"}
-  ai: {  <<: *domain, url: "https://hub.gitmirror.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/blob/meta/geo/geosite/category-ai-!cn.mrs" }
+  ai: {  <<: *domain, url: "https://hub.gitmirror.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs" }
   micuEmby: {!!merge <<: *class, url: "https://hub.gitmirror.com/https://raw.githubusercontent.com/LaiShuang/clash-rule/refs/heads/main/micuEmby.list"}
   youtube_domain: { <<: *domain, url: "https://hub.gitmirror.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: { <<: *domain, url: "https://hub.gitmirror.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
